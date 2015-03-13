@@ -23,7 +23,10 @@ app.controller('ProductesController', function($scope, ProductesService) {
     $scope.esborrarProducte = function() {
         if ($scope){
             ProductesService.romove({
-                codi: $scope.codi
+                codi: $scope.codi,
+                nom: $scope.nom,
+                seccio: $scope.seccio,
+                preu: $scope.preu
             }).success(function(producte){
                 $scope.productes.unshift(producte);
             })
