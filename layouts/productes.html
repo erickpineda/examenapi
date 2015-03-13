@@ -37,13 +37,13 @@
                     <div class="col-xs-12 col-md-4">
                         <div class="form-group">
                             <label class="control-label" for="inputDefault">Codi</label>
-                            <input type="text" class="form-control" id="inputDefault" ng-model="codi">
+                            <input type="text" class="form-control" id="inputDefault" ng-model="codi" >
                             <label class="control-label" for="inputDefault">Nom</label>
-                            <input type="text" class="form-control" id="inputDefault" ng-model="nom">
+                            <input type="text" class="form-control" id="inputDefault" ng-model="nom" >
                             <label class="control-label" for="inputDefault">Seccio</label>
-                            <input type="text" class="form-control" id="inputDefault" ng-model="seccio">
+                            <input type="text" class="form-control" id="inputDefault" ng-model="seccio" >
                             <label class="control-label" for="inputDefault">Preu</label>
-                            <input type="text" class="form-control" id="inputDefault" ng-model="preu">
+                            <input type="int" class="form-control" id="inputDefault" ng-model="preu" >
                             <br/>
                             <div class="btn-group btn-group-justified">
                                 <a class="btn btn-default" ng-click="afegirProducte()">Afegir Producte</a>
@@ -59,7 +59,7 @@
                                 <p class="list-group-item-text"><strong>Seccio: </strong>{{producte.seccio}}</p>
                                 <p class="list-group-item-text"><strong>Preu: </strong>{{producte.preu}}</p>
                                 <a class="btn btn-success btn-xs" ng-click="editarProducte()">Editar</a>
-                                <a class="btn btn-danger btn-xs" ng-click="esborrarProducte()">Esborrar</a>
+                                <a class="btn btn-danger btn-xs" ng-click="esborrarProducte(producte)">Esborrar</a>
                             </div>
                         </div>
                     </div>
